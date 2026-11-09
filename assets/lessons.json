@@ -1,0 +1,656 @@
+[
+ {
+  "n": 1,
+  "track": "10-14",
+  "title": "My body, my rights",
+  "key": [
+   "Your body belongs to you. Private parts are the parts covered by a swimsuit or underwear.",
+   "You can say NO to any touch that feels wrong or confusing, even from a relative, teacher or neighbour.",
+   "Secrets about touching are never OK. Tell a trusted adult, even if someone said not to.",
+   "In Uganda, any sexual act with a child under 18 is a crime. It is always the adult's fault, never the child's."
+  ],
+  "story": "Kiden, 12, fetches water each morning. A man at the borehole keeps touching her arm and asks her to come to his house for sweets. She feels uneasy. She says \"No\" loudly, walks back with her friends, and tells her aunt that evening. Her aunt thanks her for telling and walks with her the next day.",
+  "quiz": [
+   {
+    "q": "Who decides who can touch your body?",
+    "options": [
+     "Any adult",
+     "You",
+     "Your classmates"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "A relative tells you to keep a touching secret. What do you do?",
+    "options": [
+     "Keep it",
+     "Tell a trusted adult",
+     "Forget it"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "If an adult touches a child's private parts, whose fault is it?",
+    "options": [
+     "The child's",
+     "The adult's",
+     "Nobody's"
+    ],
+    "answer": 1
+   }
+  ],
+  "sms": "Your body belongs to you. You can say NO to any touch that feels wrong, even from someone you know. Tell a trusted adult. Help: text HELP"
+ },
+ {
+  "n": 1,
+  "track": "15-24",
+  "title": "My body, my rights",
+  "key": [
+   "Consent means a free, clear YES. Silence, fear, being drunk or asleep is not a yes.",
+   "You can change your mind at any time, even after saying yes before.",
+   "No one has the right to force or pressure you into sex: not a boyfriend, a husband, a relative or someone who gave you money or gifts.",
+   "Forced sex is never your fault, whatever you wore, where you were or what you said."
+  ],
+  "story": "Achan, 17, has a boyfriend who buys her airtime. One evening he says she owes him sex. She tells him gifts are not a payment and leaves. Later she talks with a youth worker, who explains that pressure like this is not love and tells her where to get help if he threatens her.",
+  "quiz": [
+   {
+    "q": "Which of these is consent?",
+    "options": [
+     "She stays silent",
+     "She clearly says yes and can stop at any time",
+     "He bought her a gift"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Can a husband force his wife to have sex?",
+    "options": [
+     "Yes",
+     "No, she can always say no"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "A girl was forced after a party. Whose fault is it?",
+    "options": [
+     "Hers, for going",
+     "The person who forced her",
+     "Her friends'"
+    ],
+    "answer": 1
+   }
+  ],
+  "sms": "Consent means a free YES, every time. No one can force or pressure you, not even a partner or husband. Forced sex is never your fault. Text HELP"
+ },
+ {
+  "n": 2,
+  "track": "10-14",
+  "title": "The three days",
+  "key": [
+   "If someone hurts you sexually, it is not your fault and you are not in trouble.",
+   "Tell a trusted adult as soon as you can, or flash the GirlCare72 number.",
+   "Go to a health centre within 3 days. A nurse can give medicine that protects you from HIV and pregnancy, and treat any hurt.",
+   "Care comes first. A trained person will talk with you and your family about keeping you safe."
+  ],
+  "story": "Poni, 13, was hurt by an older boy. She was scared to tell. On the second day she told her teacher, who flashed the GirlCare72 number. A responder called back, and a boda rider took Poni and her teacher to the health centre that afternoon. The nurse was kind and gave her medicine.",
+  "quiz": [
+   {
+    "q": "How soon should you get to a health centre after sexual violence?",
+    "options": [
+     "Within 3 days",
+     "After a month",
+     "Only if it hurts"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Who can you tell?",
+    "options": [
+     "Nobody",
+     "A trusted adult or GirlCare72",
+     "Only the police"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Is it the child's fault?",
+    "options": [
+     "Yes",
+     "No, never"
+    ],
+    "answer": 1
+   }
+  ],
+  "sms": "If someone hurts you sexually, it is not your fault. Tell a trusted adult and get to a health centre within 3 days. Free ride: text HELP"
+ },
+ {
+  "n": 2,
+  "track": "15-24",
+  "title": "The three days",
+  "key": [
+   "Get care as soon as possible, within 72 hours. Sooner is better.",
+   "PEP is medicine that can stop HIV. Start it within 72 hours and take it every day for 28 days.",
+   "Emergency contraception can prevent pregnancy. It works best in the first 3 days, and some methods work up to 5 days.",
+   "The health worker can also treat injuries and prevent other infections. Come even if you have washed or changed clothes.",
+   "Reporting to police is your choice. If you choose it, the health worker can fill in the medical form (PF3)."
+  ],
+  "story": "Nyibol, 19, was attacked while collecting firewood. That night she texted HELP. A responder called at the safe time she gave, sent a ride code, and told her which health centre had PEP in stock. By the next morning Nyibol had started PEP and taken emergency contraception. The responder called her on day 3, day 14 and day 28 to check she was finishing her pills.",
+  "quiz": [
+   {
+    "q": "Within how many hours should PEP start?",
+    "options": [
+     "24 hours only",
+     "72 hours",
+     "2 weeks"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How long do you take PEP?",
+    "options": [
+     "1 day",
+     "7 days",
+     "28 days"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "You washed after the attack. Should you still go for care?",
+    "options": [
+     "Yes",
+     "No, it is too late"
+    ],
+    "answer": 0
+   }
+  ],
+  "sms": "After forced sex, get care within 72 hours: medicine stops HIV and pregnancy, even if you washed. Free ride: flash our number or text HELP"
+ },
+ {
+  "n": 3,
+  "track": "10-14",
+  "title": "Preventing HIV and pregnancy",
+  "key": [
+   "HIV is a virus that weakens the body's defences. It passes through sex, blood, and from a mother to her baby.",
+   "You cannot get HIV from hugging, sharing food, cups, toilets or mosquito bites.",
+   "People living with HIV can live long, healthy lives with daily medicine. Be kind to them.",
+   "Your body is still growing. Waiting to have sex is the safest choice. If anyone forces you, see lesson 2.",
+   "You can ask a health worker any question about your body."
+  ],
+  "story": "At school, girls refuse to sit with Ayaa because her mother has HIV. Their teacher explains that HIV does not pass by sitting together or sharing lunch. The next day the girls share their groundnuts with Ayaa.",
+  "quiz": [
+   {
+    "q": "Can you get HIV by sharing a cup?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How can HIV pass from one person to another?",
+    "options": [
+     "Hugging",
+     "Sex and blood",
+     "Mosquito bites"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Can people with HIV live healthy lives?",
+    "options": [
+     "Yes, with daily medicine",
+     "No"
+    ],
+    "answer": 0
+   }
+  ],
+  "sms": "HIV is not passed by hugging, sharing food or cups. It passes through sex and blood. You can ask a health worker any question. Text HELP"
+ },
+ {
+  "n": 3,
+  "track": "15-24",
+  "title": "Preventing HIV and pregnancy",
+  "key": [
+   "Condoms, used every time, protect from both HIV and pregnancy.",
+   "Family planning methods (pills, injection, implant, coil) prevent pregnancy but not HIV. Health centres give advice and methods.",
+   "An HIV test is quick and confidential. Knowing your status lets you protect yourself and get treatment early.",
+   "PrEP is a daily pill that prevents HIV for people at high risk. Ask a health worker if it is right for you.",
+   "After forced or unprotected sex, PEP within 72 hours can stop HIV, and emergency contraception can prevent pregnancy."
+  ],
+  "story": "Kiden, 20, wants to finish her tailoring course before having a baby. At the health centre the nurse explains her choices. Kiden chooses an implant and keeps condoms too, because the implant does not protect from HIV. She also takes an HIV test with her partner.",
+  "quiz": [
+   {
+    "q": "Which method protects from both HIV and pregnancy?",
+    "options": [
+     "Implant",
+     "Condom",
+     "Injection"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What is PrEP?",
+    "options": [
+     "A daily pill that prevents HIV",
+     "A pregnancy test",
+     "A vaccine for HIV"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Does the implant protect from HIV?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "answer": 1
+   }
+  ],
+  "sms": "Condoms protect from HIV and pregnancy. Health centres give family planning and HIV tests. After forced sex, PEP within 72h stops HIV. Text HELP"
+ },
+ {
+  "n": 4,
+  "track": "10-14",
+  "title": "Periods and growing up",
+  "key": [
+   "Periods are a normal, healthy sign that your body is growing. They often start between ages 9 and 16.",
+   "A period usually lasts 2 to 7 days. In the first years it may come at uneven times.",
+   "Use a pad, a clean cloth or a reusable pad. Change it every 4 to 6 hours, or sooner if it is full.",
+   "Wash cloth pads with soap and dry them in the sun, which kills germs.",
+   "Cramps are common. Rest, warm water on your belly and pain medicine from a health worker can help.",
+   "Periods mean your body could become pregnant if you have sex."
+  ],
+  "story": "Kiden's first period starts during class and she is afraid to stand up. Her friend lends her a sweater to tie around her waist and walks with her to the senior woman teacher, who gives her a pad and shows her how to use it. Kiden learns it happens to every girl.",
+  "quiz": [
+   {
+    "q": "Are periods a sign of illness?",
+    "options": [
+     "Yes",
+     "No, they are normal and healthy"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How should you dry a washed cloth pad?",
+    "options": [
+     "In the sun",
+     "Hidden while still wet",
+     "It doesn't matter"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How often should you change a pad?",
+    "options": [
+     "Once a day",
+     "Every 4 to 6 hours or when full"
+    ],
+    "answer": 1
+   }
+  ],
+  "sms": "Periods are normal and healthy and often start between age 9 and 16. Change your pad often and dry cloth pads in the sun. Ask a nurse anything."
+ },
+ {
+  "n": 4,
+  "track": "15-24",
+  "title": "Periods and growing up",
+  "key": [
+   "A cycle is counted from the first day of one period to the first day of the next, often 21 to 35 days.",
+   "Fertile days are around the middle of the cycle, but pregnancy can happen on other days too, so counting days alone is not reliable.",
+   "See a health worker if a period lasts more than 7 days, soaks a pad every hour, causes pain that stops your daily life, or is late and you may be pregnant.",
+   "A missed period after sex can mean pregnancy. A test at the health centre gives the answer.",
+   "Some family planning methods change bleeding. This is usually not harmful; ask the health worker."
+  ],
+  "story": "Achan, 18, has had heavy, painful periods for months and misses school days. She thinks it is normal to suffer. Her cousin tells her to see the nurse, who finds she is anaemic and gives her iron tablets and pain advice. Achan goes back to school every day of the month.",
+  "quiz": [
+   {
+    "q": "How long is a usual cycle?",
+    "options": [
+     "7 days",
+     "21 to 35 days",
+     "60 days"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Your pad is soaked every hour. What do you do?",
+    "options": [
+     "Wait",
+     "See a health worker"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Is counting days alone a reliable way to avoid pregnancy?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "answer": 1
+   }
+  ],
+  "sms": "A period often comes every 21 to 35 days. See a health worker if it lasts over 7 days, soaks a pad each hour, or stops and you may be pregnant."
+ },
+ {
+  "n": 5,
+  "track": "10-14",
+  "title": "Trusted adults and a safety plan",
+  "key": [
+   "A trusted adult listens, believes you and helps you stay safe. It could be a parent, aunt, teacher, religious leader or health worker.",
+   "Name at least two trusted adults, in case one is not there or does not help.",
+   "Trust your feelings. If a person or place makes you feel unsafe, leave and tell someone.",
+   "Walk with friends, especially to fetch water or firewood, and to and from school.",
+   "It is always OK to tell, even if someone threatened you or said it is a secret."
+  ],
+  "story": "Ayaa, 11, draws a hand on paper with her teacher. On each finger she writes a trusted adult: her mother, her grandmother, her teacher, the pastor's wife and the nurse. She keeps the paper in her school book so she always remembers who to go to.",
+  "quiz": [
+   {
+    "q": "What does a trusted adult do?",
+    "options": [
+     "Listens and helps you",
+     "Asks you to keep secrets",
+     "Gives you gifts for favours"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Why name two trusted adults?",
+    "options": [
+     "In case one is not there or does not help",
+     "It is a rule"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Someone says, \"Don't tell anyone.\" Can you still tell?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "answer": 0
+   }
+  ],
+  "sms": "Name 2 trusted adults you can tell anything. If someone makes you feel unsafe, go to a safe place and tell them. It is OK to tell. Text HELP"
+ },
+ {
+  "n": 5,
+  "track": "15-24",
+  "title": "Trusted adults and a safety plan",
+  "key": [
+   "A safety plan is decided before danger, so you know what to do without thinking.",
+   "Plan four things: a safe place to go, a person who will help, a code word that tells that person you need help, and how you will reach GirlCare72.",
+   "Save the GirlCare72 number under a safe name, and know that flashing it costs nothing.",
+   "Keep important things (ID, refugee card, a little money, medicine) where you can grab them quickly.",
+   "Violence at home is not your fault. A responder can help you think through your plan in private."
+  ],
+  "story": "Nyibol, 22, lives with a husband who becomes violent when he drinks. She agrees with her neighbour that if she says \"bring me salt\", the neighbour will come at once. She keeps her refugee card with the neighbour and saves GirlCare72 as \"Tailoring class\". One night she uses the code word and goes next door safely.",
+  "quiz": [
+   {
+    "q": "When is the best time to make a safety plan?",
+    "options": [
+     "Before danger",
+     "During an attack",
+     "Never"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What is a code word for?",
+    "options": [
+     "A password for the phone",
+     "Telling a helper you need help without others knowing"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How can you save the GirlCare72 number?",
+    "options": [
+     "Under a safe name",
+     "As \"GBV help line\""
+    ],
+    "answer": 0
+   }
+  ],
+  "sms": "Make a safety plan: a safe place to go, a person to call, a code word for danger, and our number saved under a safe name. Text HELP"
+ },
+ {
+  "n": 6,
+  "track": "10-14",
+  "title": "My phone and my safety",
+  "key": [
+   "Never send photos of your body to anyone, even a friend. Once sent, you cannot take a photo back.",
+   "Do not share your name, school or where you live with people you only know from your phone.",
+   "If someone you met online asks to meet, asks for photos, or offers airtime or gifts, say no and tell a trusted adult.",
+   "If someone threatens to share a photo, it is not your fault. Tell a trusted adult or flash GirlCare72."
+  ],
+  "story": "A boy Poni, 14, met on Facebook sends her airtime and then asks for a photo without clothes. She feels pressured. She blocks him and shows the messages to her older sister, who helps her report his account.",
+  "quiz": [
+   {
+    "q": "Someone online sends you airtime and asks for a photo. What do you do?",
+    "options": [
+     "Send it",
+     "Say no, block and tell a trusted adult"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Can you take a photo back after sending it?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Someone threatens to share your photo. Whose fault is it?",
+    "options": [
+     "Yours",
+     "The person threatening you"
+    ],
+    "answer": 1
+   }
+  ],
+  "sms": "Never send photos of your body to anyone. If someone online asks or threatens you, it is not your fault. Tell a trusted adult. Text HELP"
+ },
+ {
+  "n": 6,
+  "track": "15-24",
+  "title": "My phone and my safety",
+  "key": [
+   "Lock your phone with a PIN only you know. A partner checking your phone without asking is a warning sign of control.",
+   "Delete messages and call logs you need to keep private. GirlCare72 SMS never say why we are calling.",
+   "In this app, the quick exit button opens a neutral page at once. Clear your lesson history with one tap.",
+   "Save the GirlCare72 number under a safe name. Flashing it costs nothing and leaves only a missed call.",
+   "Threats to share private photos are a form of violence. Keep the messages as proof if it is safe, and get help."
+  ],
+  "story": "Achan, 21, thinks her boyfriend reads her messages. She sets a phone PIN, saves GirlCare72 as \"Mama Rose\", and learns to use the quick exit. When he picks up her phone while she is reading a lesson, she taps quick exit and he sees only a weather page.",
+  "quiz": [
+   {
+    "q": "What does the quick exit button do?",
+    "options": [
+     "Opens a neutral page at once",
+     "Calls the police",
+     "Turns off the phone"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "A partner always checks your phone without asking. What can this be?",
+    "options": [
+     "Normal love",
+     "A warning sign of control"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What do GirlCare72 SMS say about why we call?",
+    "options": [
+     "Everything",
+     "Nothing"
+    ],
+    "answer": 1
+   }
+  ],
+  "sms": "Lock your phone, delete messages you need to hide, use the app's quick exit. Our SMS never say why we call. Flash us or text HELP"
+ },
+ {
+  "n": 7,
+  "track": "10-14",
+  "title": "School and my future",
+  "key": [
+   "Going to school is your right. Every year of school opens more choices later.",
+   "No teacher, driver, shopkeeper or relative may ask for sex in exchange for marks, fees, money or gifts. It is abuse and a crime.",
+   "If anyone offers you something for sex, say no, leave and tell a trusted adult.",
+   "Child marriage harms girls. You have the right to finish school before marriage.",
+   "Dream big: write down one thing you want to be when you grow up."
+  ],
+  "story": "A boda driver offers Ayaa, 13, free rides to school if she will be his \"girlfriend\". She says no and tells the senior woman teacher, who arranges for Ayaa to walk with a group of girls from her block. Ayaa wants to be a nurse and keeps going to school.",
+  "quiz": [
+   {
+    "q": "A teacher offers good marks for sex. What is this?",
+    "options": [
+     "A favour",
+     "Abuse and a crime"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What should you do if someone offers gifts for sex?",
+    "options": [
+     "Accept",
+     "Say no, leave and tell a trusted adult"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Should a 13-year-old girl be married?",
+    "options": [
+     "Yes",
+     "No, she has the right to finish school"
+    ],
+    "answer": 1
+   }
+  ],
+  "sms": "School is your right. If anyone offers money, gifts or marks for sex, say no and tell a trusted adult. It is a crime. Text HELP"
+ },
+ {
+  "n": 7,
+  "track": "15-24",
+  "title": "School and my future",
+  "key": [
+   "You choose if and when to have a baby. Family planning helps you finish school or a course first.",
+   "In Uganda, girls who become pregnant or have a baby can return to school. Ask your school or responder how.",
+   "Older men who give money for sex put girls at risk of HIV, pregnancy and violence. You deserve a partner who respects you.",
+   "Skills training, savings groups and youth programmes in the settlement can help you earn your own money.",
+   "Set one goal for this year and one step for this week."
+  ],
+  "story": "Kiden, 17, had a baby last year and thought her schooling was over. A youth worker helped her mother agree to care for the baby in the mornings, and Kiden went back to Senior 3. She uses an implant so she can finish school before deciding on another child.",
+  "quiz": [
+   {
+    "q": "Can a young mother go back to school in Uganda?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What risks come with relationships for money?",
+    "options": [
+     "None",
+     "HIV, pregnancy and violence"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Who decides when you have a baby?",
+    "options": [
+     "You",
+     "Your neighbours"
+    ],
+    "answer": 0
+   }
+  ],
+  "sms": "Plan your future: school, skills, work. You choose if and when to have a baby. Young mothers can go back to school. Ask your responder."
+ },
+ {
+  "n": 8,
+  "track": "10-14",
+  "title": "Where to get help in Imvepi",
+  "key": [
+   "To get help, flash or call the GirlCare72 number, or text HELP. A trusted adult can also do it for you.",
+   "A trained responder calls you back at a safe time. You do not have to give your name.",
+   "If you need care, GirlCare72 sends a free boda ride to the health centre.",
+   "Places that can help: your nearest health centre, the child protection desk, and your senior woman teacher.",
+   "Save the number under a safe name, like a friend's name."
+  ],
+  "story": "Poni, 12, saved the GirlCare72 number as \"Auntie Grace\". When her friend was hurt, Poni helped her flash the number. A responder called back within half an hour, and a rider took her friend and her friend's mother to the health centre.",
+  "quiz": [
+   {
+    "q": "How do you reach GirlCare72?",
+    "options": [
+     "Flash or call the number, or text HELP",
+     "Go to the market"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Do you have to give your name?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Who pays for the ride to the health centre?",
+    "options": [
+     "You",
+     "Nobody, GirlCare72 pays the rider"
+    ],
+    "answer": 1
+   }
+  ],
+  "sms": "Need help? Flash or call our number, or text HELP. A trained responder calls you back. The ride to care is free. Save our number under a safe name."
+ },
+ {
+  "n": 8,
+  "track": "15-24",
+  "title": "Where to get help in Imvepi",
+  "key": [
+   "Three ways in: flash or call the GirlCare72 number, text HELP, or tap Get help in this app.",
+   "A responder calls back fast, at the safe time you choose, from a neutral number.",
+   "She tells you which health centre has PEP and emergency contraception today, and sends a ride code by SMS. Give the code to the rider; you pay nothing.",
+   "After care, she checks on you by phone until you finish your medicine.",
+   "Other help in Imvepi: counselling at the GBV case management agency, the police family and child protection desk, and legal aid. Each one is your choice."
+  ],
+  "story": "Achan, 24, tapped Get help and chose \"after 6 pm\" as her safe time. At 6:15 a responder called, asked if it was safe to talk, and sent a ride code. The rider took her to the health centre with PEP in stock. Later, with Achan's consent, the responder linked her to counselling.",
+  "quiz": [
+   {
+    "q": "Name one way to reach GirlCare72.",
+    "options": [
+     "Flash the number, text HELP or tap Get help",
+     "Wait for a visit"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What do you give the rider?",
+    "options": [
+     "Money",
+     "The ride code"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Do you have to report to police to get care?",
+    "options": [
+     "Yes",
+     "No, it is your choice"
+    ],
+    "answer": 1
+   }
+  ],
+  "sms": "Help in Imvepi: flash or call our number or text HELP. We call back fast, send a free ride code and tell you which clinic has the medicine."
+ }
+]

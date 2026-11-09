@@ -1,0 +1,71 @@
+{
+ "published": true,
+ "brand": "GirlCare72",
+ "hero_title": "Learn, ask and get help, all in one safe app",
+ "hero_text": "GirlCare72 gives girls and young women in Imvepi short lessons about their body, health and safety, answers to their questions, and a free call back when they need help.",
+ "hero_cta": "Download the app",
+ "ways_title": "Three ways to reach us",
+ "ways": [
+  {
+   "title": "Flash or call",
+   "text": "Flash or call the free number from any phone. A trained responder calls you back at a safe time."
+  },
+  {
+   "title": "Text",
+   "text": "Send HELP for a call back, LEARN for a weekly lesson, or ASK and your question."
+  },
+  {
+   "title": "Use the app",
+   "text": "Lessons, quizzes and Ask GirlCare on a smartphone. Get help in one tap."
+  }
+ ],
+ "features_title": "What the app gives every girl",
+ "features": [
+  {
+   "title": "Short lessons",
+   "text": "Eight lessons for ages 10 to 14 and 15 to 24, with a story, a quiz and audio."
+  },
+  {
+   "title": "Ask GirlCare",
+   "text": "Ask anything about your body, health or safety. Answers come only from approved lessons."
+  },
+  {
+   "title": "Get help",
+   "text": "One tap for a call back. If you need care, we send a free ride to the health centre."
+  },
+  {
+   "title": "Private by design",
+   "text": "No account and no name. Quick exit on every screen. Your progress stays on your phone."
+  }
+ ],
+ "free_number": "0788907052",
+ "download_title": "Download GirlCare72",
+ "download_text": "For Android phones. It works offline after the first open, so you only need data once.",
+ "download_steps": [
+  "Tap Download and open the file when it finishes.",
+  "If your phone asks, allow installs from this browser.",
+  "Open GirlCare72. No account is needed."
+ ],
+ "partners_title": "For partners",
+ "partners_text": "GirlCare72 is run by Hope Foundation in Imvepi refugee settlement with health centres, boda riders and the GBV case management agency. Partners see anonymous totals only.",
+ "partners": [
+  "Hope Foundation"
+ ],
+ "faq": [
+  {
+   "q": "Does it cost money?",
+   "a": "No. Flashing the number, the call back, the app and the ride to care are free."
+  },
+  {
+   "q": "Will anyone know I used it?",
+   "a": "Our SMS never say why we call, the app has a neutral name, and quick exit hides it at once."
+  },
+  {
+   "q": "What if I don't have a smartphone?",
+   "a": "Every feature works by flashing the number or sending SMS."
+  }
+ ],
+ "contact_email": "info@hopefoundationug.net",
+ "footer": "GirlCare72 is a Hope Foundation programme. Open-source software.",
+ "quick_exit_url": "https://www.google.com/search?q=weather+arua"
+}
