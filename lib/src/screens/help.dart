@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../config.dart';
 import '../state.dart';
+import 'directory.dart';
+import 'help_dialogs.dart';
 
+/// Get help: a one-step call-back request, and the directory of places that help.
 class HelpScreen extends StatefulWidget {
   const HelpScreen({super.key});
   @override
@@ -12,6 +14,32 @@ class HelpScreen extends StatefulWidget {
 }
 
 class _HelpScreenState extends State<HelpScreen> {
+  String section = 'call';
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(padding: const EdgeInsets.all(18), children: [
+      SegmentedButton<String>(
+        segments: const [
+          ButtonSegment(value: 'call', icon: Icon(Icons.phone_callback_outlined), label: Text('Call me back')),
+          ButtonSegment(value: 'places', icon: Icon(Icons.map_outlined), label: Text('Places that help')),
+        ],
+        selected: {section},
+        onSelectionChanged: (v) => setState(() => section = v.first),
+      ),
+      const SizedBox(height: 16),
+      if (section == 'call') const _CallBackForm() else DirectoryList(onCallBack: () => setState(() => section = 'call')),
+    ]);
+  }
+}
+
+class _CallBackForm extends StatefulWidget {
+  const _CallBackForm();
+  @override
+  State<_CallBackForm> createState() => _CallBackFormState();
+}
+
+class _CallBackFormState extends State<_CallBackForm> {
   final _form = GlobalKey<FormState>();
   final _phone = TextEditingController();
   String language = 'English';
@@ -36,61 +64,17 @@ class _HelpScreenState extends State<HelpScreen> {
     });
     // Only say "we will call you" when the server really has the request.
     // Otherwise the girl must know to call us herself.
-    err == null ? _showReceived() : _showNotSent();
+    err == null ? showRequestReceived(context, safeTime: safeTime) : showNotSent(context);
   }
-
-  Future<void> _callFreeNumber() async {
-    final ok = await launchUrl(Uri(scheme: 'tel', path: Config.freeNumber.replaceAll(' ', '')));
-    if (!ok && mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Call ${Config.freeNumber}')));
-    }
-  }
-
-  void _showReceived() => showDialog<void>(
-        context: context,
-        builder: (ctx) => AlertDialog(
-          icon: Icon(Icons.check_circle, size: 48, color: Theme.of(ctx).colorScheme.primary),
-          title: const Text('Request received'),
-          content: Text(
-            'We will call you back shortly, at the safe time you chose (${safeTime.toLowerCase()}). '
-            'The call comes from a neutral number.\n\nNothing about this request is kept in the app.',
-          ),
-          actions: [FilledButton(onPressed: () => Navigator.pop(ctx), child: const Text('OK'))],
-        ),
-      );
-
-  void _showNotSent() => showDialog<void>(
-        context: context,
-        builder: (ctx) => AlertDialog(
-          icon: Icon(Icons.phone_in_talk, size: 48, color: Theme.of(ctx).colorScheme.primary),
-          title: const Text('Please call us now'),
-          content: Text(
-            'Your request did not reach us, so we cannot call you back yet. '
-            'Flash or call ${Config.freeNumber}, or text HELP to it, and a responder will help you.',
-          ),
-          actions: [
-            TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('Try again later')),
-            FilledButton.icon(
-              icon: const Icon(Icons.call),
-              label: const Text('Call now'),
-              onPressed: () {
-                Navigator.pop(ctx);
-                _callFreeNumber();
-              },
-            ),
-          ],
-        ),
-      );
 
   @override
   Widget build(BuildContext context) {
     final s = AppScope.of(context);
     final t = Theme.of(context).textTheme;
     final c = Theme.of(context).colorScheme;
-
     return Form(
       key: _form,
-      child: ListView(padding: const EdgeInsets.all(18), children: [
+      child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
         Text('Get help', style: t.headlineSmall?.copyWith(fontWeight: FontWeight.w800)),
         const SizedBox(height: 4),
         Text('One step. We call you back. We only send your number, language and a safe time.', style: t.bodyMedium?.copyWith(color: c.onSurfaceVariant)),
@@ -135,6 +119,11 @@ class _HelpScreenState extends State<HelpScreen> {
               SelectableText(Config.freeNumber, style: t.headlineSmall?.copyWith(fontWeight: FontWeight.w800, letterSpacing: 1)),
               const SizedBox(height: 4),
               Text('Flashing costs nothing. Save the number under a safe name. Text HELP for a call back, or LEARN for weekly lessons.', style: t.bodySmall),
+              const SizedBox(height: 10),
+              Wrap(spacing: 8, runSpacing: 6, children: [
+                FilledButton.tonalIcon(onPressed: () => callNumber(context, Config.freeNumber), icon: const Icon(Icons.call), label: const Text('Call now')),
+                OutlinedButton.icon(onPressed: () => sendSms(context, Config.freeNumber, 'HELP'), icon: const Icon(Icons.sms_outlined), label: const Text('Text HELP')),
+              ]),
             ]),
           ),
         ),

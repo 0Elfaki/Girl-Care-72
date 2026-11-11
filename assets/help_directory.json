@@ -1,0 +1,58 @@
+[
+ {
+  "id": "sauti",
+  "kind": "Children",
+  "name": "Sauti 116 child helpline",
+  "what": "Free helpline for children and young people, day and night. Tell them what happened and they help you get care and protection.",
+  "phone": "116",
+  "hours": "24 hours",
+  "free": true
+ },
+ {
+  "id": "police",
+  "kind": "Police",
+  "name": "Police emergency",
+  "what": "For danger right now. Say where you are and what is happening. 112 also works.",
+  "phone": "999",
+  "hours": "24 hours",
+  "free": true
+ },
+ {
+  "id": "cfpu",
+  "kind": "Police",
+  "name": "Child and Family Protection Unit",
+  "what": "Police officers trained to help girls and families, at the nearest police post. Ask for the Child and Family Protection officer. A GirlCare72 responder can go with you.",
+  "hours": "Daytime"
+ },
+ {
+  "id": "health",
+  "kind": "Health",
+  "name": "Health centre: PEP, emergency pills, HIV test",
+  "what": "Care within 72 hours of forced or unprotected sex can stop HIV and pregnancy. GirlCare72 sends a free ride.",
+  "hours": "24 hours for emergencies"
+ },
+ {
+  "id": "gbv",
+  "kind": "Counselling",
+  "name": "GBV case management agency",
+  "what": "Trained case workers who listen, keep it private and plan the next steps with you."
+ },
+ {
+  "id": "counsel",
+  "kind": "Counselling",
+  "name": "Counselling",
+  "what": "Someone to talk to about stress, fear or sadness, as many times as you need."
+ },
+ {
+  "id": "legal",
+  "kind": "Legal",
+  "name": "Legal aid",
+  "what": "Free lawyers who explain your rights and help with a police case or court, including child marriage and defilement."
+ },
+ {
+  "id": "shelter",
+  "kind": "Shelter",
+  "name": "Safe shelter",
+  "what": "A safe place to stay for a while when home is not safe. A responder arranges it the same day."
+ }
+]

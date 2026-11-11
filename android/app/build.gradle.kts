@@ -6,12 +6,15 @@ plugins {
 
 android {
     namespace = "net.hopefoundationug.girlcare72"
-    compileSdk = flutter.compileSdkVersion
+    // flutter_local_notifications 23 (daily reminders) needs 37 or newer.
+    compileSdk = maxOf(flutter.compileSdkVersion, 37)
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+        // Scheduled reminders (flutter_local_notifications) need this on older Android.
+        isCoreLibraryDesugaringEnabled = true
     }
 
     defaultConfig {
@@ -46,4 +49,8 @@ kotlin {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
 }

@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 import 'src/api.dart';
+import 'src/notifications.dart';
 import 'src/screens/shell.dart';
 import 'src/state.dart';
 import 'src/theme.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  Reminders.instance.init(); // so a reminder she set earlier keeps working after an update
   final state = AppState(Api())..load();
   runApp(GirlCareApp(state: state));
 }

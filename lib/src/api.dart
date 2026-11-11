@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 
 import 'answer_bank.dart';
 import 'config.dart';
+import 'help_directory.dart';
 import 'models.dart';
 
 /// Talks to the GirlCare72 server. Nothing sent here contains a name.
@@ -48,18 +49,47 @@ class Api {
   }
 
   /// Sends a call-back request. Returns an error message, or null on success.
-  Future<String?> requestHelp({required String phone, required String language, required String safeTime, required bool forSomeone}) async {
+  /// [kind] is "help" (a responder) or "nurse" (a health question, with [question]).
+  Future<String?> requestHelp({
+    required String phone,
+    required String language,
+    required String safeTime,
+    required bool forSomeone,
+    String kind = 'help',
+    String? question,
+  }) async {
     if (!online) return 'offline';
     try {
       final r = await _client
           .post(_u('/api/public/help'),
               headers: {'Content-Type': 'application/json'},
-              body: jsonEncode({'phone': phone, 'language': language, 'safe_time': safeTime, 'for_someone': forSomeone, 'check': 'gc72'}))
+              body: jsonEncode({
+                'phone': phone,
+                'language': language,
+                'safe_time': safeTime,
+                'for_someone': forSomeone,
+                'kind': kind,
+                if (question != null && question.isNotEmpty) 'question': question,
+                'check': 'gc72',
+              }))
           .timeout(_timeout);
       if (r.statusCode == 200) return null;
       return 'server';
     } catch (_) {
       return 'offline';
+    }
+  }
+
+  /// The help directory the team keeps in the dashboard, or null if the server can't be reached.
+  Future<List<HelpPlace>?> directory() async {
+    if (!online) return null;
+    try {
+      final r = await _client.get(_u('/api/public/directory')).timeout(_timeout);
+      if (r.statusCode != 200) return null;
+      final j = jsonDecode(utf8.decode(r.bodyBytes)) as Map<String, dynamic>;
+      return placesFromJson(j['places'] as List? ?? []);
+    } catch (_) {
+      return null;
     }
   }
 

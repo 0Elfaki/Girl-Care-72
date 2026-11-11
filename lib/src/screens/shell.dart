@@ -6,6 +6,19 @@ import 'ask.dart';
 import 'exit.dart';
 import 'help.dart';
 import 'learn.dart';
+import 'me.dart';
+
+const tabLearn = 0;
+const tabAsk = 1;
+const tabMe = 2;
+const tabHelp = 3;
+
+/// From any pushed screen: closes it and shows one of the main tabs.
+void showTab(BuildContext context, int tab) {
+  final s = AppScope.of(context);
+  Navigator.of(context).popUntil((r) => r.isFirst);
+  s.openTab(tab);
+}
 
 /// Opens the neutral screen at once and removes every GirlCare72 screen from the
 /// back stack, so the back button cannot return to the app.
@@ -36,38 +49,40 @@ class QuickExitButton extends StatelessWidget {
       );
 }
 
-class Shell extends StatefulWidget {
-  const Shell({super.key, this.initialTab = 0});
-  final int initialTab;
-  @override
-  State<Shell> createState() => _ShellState();
-}
-
-class _ShellState extends State<Shell> {
-  late int tab = widget.initialTab;
-
-  void goTo(int i) => setState(() => tab = i);
+class Shell extends StatelessWidget {
+  const Shell({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final pages = [LearnScreen(onGetHelp: () => goTo(2)), AskScreen(onGetHelp: () => goTo(2)), const HelpScreen()];
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('GirlCare72', style: TextStyle(fontWeight: FontWeight.w800)),
-        actions: [
-          IconButton(tooltip: 'Settings', icon: const Icon(Icons.tune), onPressed: () => showSettings(context)),
-          const QuickExitButton(),
-        ],
-      ),
-      body: SafeArea(child: IndexedStack(index: tab, children: pages)),
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: tab,
-        onDestinationSelected: goTo,
-        destinations: const [
-          NavigationDestination(icon: Icon(Icons.menu_book_outlined), selectedIcon: Icon(Icons.menu_book), label: 'Learn'),
-          NavigationDestination(icon: Icon(Icons.chat_bubble_outline), selectedIcon: Icon(Icons.chat_bubble), label: 'Ask'),
-          NavigationDestination(icon: Icon(Icons.favorite_border), selectedIcon: Icon(Icons.favorite), label: 'Get help'),
-        ],
+    final s = AppScope.of(context);
+    return ValueListenableBuilder<int>(
+      valueListenable: s.tab,
+      builder: (context, tab, _) => Scaffold(
+        appBar: AppBar(
+          title: const Text('GirlCare72', style: TextStyle(fontWeight: FontWeight.w800)),
+          actions: [
+            IconButton(tooltip: 'Settings', icon: const Icon(Icons.tune), onPressed: () => showSettings(context)),
+            const QuickExitButton(),
+          ],
+        ),
+        body: SafeArea(
+          child: IndexedStack(index: tab, children: [
+            LearnScreen(onGetHelp: () => s.openTab(tabHelp)),
+            AskScreen(onGetHelp: () => s.openTab(tabHelp)),
+            const MeScreen(),
+            const HelpScreen(),
+          ]),
+        ),
+        bottomNavigationBar: NavigationBar(
+          selectedIndex: tab,
+          onDestinationSelected: s.openTab,
+          destinations: const [
+            NavigationDestination(icon: Icon(Icons.menu_book_outlined), selectedIcon: Icon(Icons.menu_book), label: 'Learn'),
+            NavigationDestination(icon: Icon(Icons.chat_bubble_outline), selectedIcon: Icon(Icons.chat_bubble), label: 'Ask'),
+            NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: 'Me'),
+            NavigationDestination(icon: Icon(Icons.favorite_border), selectedIcon: Icon(Icons.favorite), label: 'Get help'),
+          ],
+        ),
       ),
     );
   }
@@ -97,7 +112,7 @@ void showSettings(BuildContext context) {
             const SizedBox(height: 16),
             OutlinedButton.icon(
               icon: const Icon(Icons.delete_outline),
-              label: const Text('Clear my progress and chat'),
+              label: const Text('Clear my progress, chat and tools'),
               onPressed: () async {
                 await s.clearAll();
                 if (ctx.mounted) {
@@ -107,7 +122,8 @@ void showSettings(BuildContext context) {
               },
             ),
             const SizedBox(height: 8),
-            Text('GirlCare72 has no account and keeps no name. Your progress stays on this phone.', style: Theme.of(ctx).textTheme.bodySmall),
+            Text('GirlCare72 has no account and keeps no name. Your progress, reminder, periods and check-ins stay on this phone.',
+                style: Theme.of(ctx).textTheme.bodySmall),
           ]),
         ),
       );

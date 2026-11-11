@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../answer_bank.dart';
 import '../models.dart';
 import '../state.dart';
+import 'nurse.dart';
 
 class AskScreen extends StatefulWidget {
   const AskScreen({super.key, required this.onGetHelp});
@@ -60,12 +61,18 @@ class _AskScreenState extends State<AskScreen> {
           const SizedBox(height: 4),
           Text('Ask anything about your body, health or safety. Answers come only from approved lessons. No name needed, and the chat is not saved.',
               style: t.bodyMedium?.copyWith(color: c.onSurfaceVariant)),
-          const SizedBox(height: 14),
+          const SizedBox(height: 6),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: TextButton.icon(
+              onPressed: () => showNurseSheet(context),
+              icon: const Icon(Icons.support_agent),
+              label: const Text('Prefer a person? Talk to a nurse'),
+            ),
+          ),
+          const SizedBox(height: 8),
           if (s.chat.isEmpty) _bubble(context, false, 'Hi. What would you like to know? For example: "What is PEP?" or "Is my period normal?"'),
-          for (final line in s.chat) ...[
-            if (!line.fromGirl && (line.answer?.help ?? false)) _helpCard(context),
-            if (line.text.isNotEmpty) _bubble(context, line.fromGirl, line.text, answer: line.answer),
-          ],
+          ..._lines(context, s),
           if (busy) Padding(padding: const EdgeInsets.all(8), child: Text('Thinking…', style: t.bodyMedium?.copyWith(color: c.onSurfaceVariant))),
         ]),
       ),
@@ -93,7 +100,20 @@ class _AskScreenState extends State<AskScreen> {
     ]);
   }
 
-  Widget _bubble(BuildContext context, bool mine, String text, {Answer? answer}) {
+  /// The chat so far. Each answer remembers the question before it, so
+  /// "Talk to a nurse" can carry that question across.
+  List<Widget> _lines(BuildContext context, AppState s) {
+    final out = <Widget>[];
+    var question = '';
+    for (final line in s.chat) {
+      if (line.fromGirl) question = line.text;
+      if (!line.fromGirl && (line.answer?.help ?? false)) out.add(_helpCard(context));
+      if (line.text.isNotEmpty) out.add(_bubble(context, line.fromGirl, line.text, answer: line.answer, question: question));
+    }
+    return out;
+  }
+
+  Widget _bubble(BuildContext context, bool mine, String text, {Answer? answer, String question = ''}) {
     final c = Theme.of(context).colorScheme;
     final src = answer == null
         ? null
@@ -124,6 +144,16 @@ class _AskScreenState extends State<AskScreen> {
               padding: const EdgeInsets.only(top: 6),
               child: Text([?src, if (answer?.lesson != null) 'see lesson ${answer!.lesson}'].join(' · '),
                   style: TextStyle(fontSize: 12, color: c.onSurfaceVariant)),
+            ),
+          if (answer?.source == 'none')
+            Padding(
+              padding: const EdgeInsets.only(top: 8),
+              child: FilledButton.tonalIcon(
+                style: FilledButton.styleFrom(minimumSize: const Size(0, 44)),
+                onPressed: () => showNurseSheet(context, question: question),
+                icon: const Icon(Icons.support_agent),
+                label: const Text('Ask a nurse instead'),
+              ),
             ),
         ]),
       ),
